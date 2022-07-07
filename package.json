@@ -1,16 +1,24 @@
 {
-  "name": "proyecto_vue",
+  "name": "recovery",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vue-form": "^4.10.3",
+    "vue-router": "^3.5.3",
+    "bootstrap": "^4.6.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
   },
+
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
@@ -21,6 +29,7 @@
     "eslint-plugin-vue": "^8.0.3",
     "vue-template-compiler": "^2.6.14"
   },
+
   "eslintConfig": {
     "root": true,
     "env": {
@@ -35,6 +44,7 @@
     },
     "rules": {}
   },
+  
   "browserslist": [
     "> 1%",
     "last 2 versions",
