@@ -18,8 +18,6 @@
         <Son :input="formData.input"></Son>
         <Answers></Answers>
         <br>
-       
-
       </div>
   </section>
 </template>
