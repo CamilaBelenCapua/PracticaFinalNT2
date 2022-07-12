@@ -10,20 +10,29 @@
             <h5>{{changeVowel}} (Codificado)</h5>
           
           <br>
-            <h5>{{this.input | upperCase()}} (Mayúscula)</h5>   <!-- Se usó filtro global-->
+
+          <!-- Se utilizó filtro global-->
+            <h5>{{this.input | upperCase()}} (Mayúscula)</h5>   
           
           <br>
-            <h5>{{this.input | upperToLower()}}(Mayúscula/Minúscula)</h5> <!-- Se usó filtro global-->
+
+          <!-- Se utilizó filtro global-->
+            <h5>{{this.input | upperToLower()}}(Mayúscula/Minúscula)</h5> 
           
           <br>
-          <h5>{{lowerToUpper}} (Minúscula/Mayúscula)</h5>
+
+           <!-- Se utilizó mixin local-->
+          <h5>{{lowerToUpper}} (Minúscula/Mayúscula)</h5> 
         <br>
       </div>
   </section>
 </template>
 
 <script>
+
+import { mixins } from "../localMixin";
 export default {
+  mixins: [mixins],
   name: 'src-components-Input',
   props: ['input'],
 
@@ -67,19 +76,6 @@ export default {
             newWord += newLetter    
         }
         return newWord            
-    },
-
-    lowerToUpper(){
-      let newWord = ''
-      for (let i=0; i<=this.input.length-1; i++) {
-        const letter = this.input[i]
-        if(i%2===0){
-          newWord += letter.toLowerCase();
-        }else{
-          newWord += letter.toUpperCase();
-        }
-      } 
-      return newWord
     }
 
   },
