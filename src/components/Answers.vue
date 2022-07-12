@@ -1,6 +1,6 @@
 <template>
   <div class="src-components-Answers">
-    <p>Answers 1:C 2:B 3:D 4:A 5:B</p>
+    <p>Answers 1:C 2:B 3:C 4:A 5:B</p>
   </div>
 </template>
 
