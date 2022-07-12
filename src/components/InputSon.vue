@@ -10,10 +10,10 @@
             <h5>{{changeVowel}} (Codificado)</h5>
           
           <br>
-            <h5>{{upperCase}} (Mayúscula)</h5>
+            <h5>{{this.input | upperCase()}} (Mayúscula)</h5>   <!-- Se usó filtro global-->
           
           <br>
-            <h5>{{upperToLower}}(Mayúscula/Minúscula)</h5>
+            <h5>{{this.input | upperToLower()}}(Mayúscula/Minúscula)</h5> <!-- Se usó filtro global-->
           
           <br>
           <h5>{{lowerToUpper}} (Minúscula/Mayúscula)</h5>
@@ -67,27 +67,6 @@ export default {
             newWord += newLetter    
         }
         return newWord            
-    },
-
-    upperCase(){
-      return this.input.toUpperCase() ;
-    },
-
-    lowerCase(){
-      return this.input.toLowerCase() ;
-    },
-
-    upperToLower (){
-      let newWord = ''
-      for (let i=0; i<=this.input.length-1; i++) {
-        const letter = this.input[i]
-        if(i%2===0){
-          newWord += letter.toUpperCase();
-        }else{
-          newWord += letter.toLowerCase();
-        }
-      } 
-      return newWord
     },
 
     lowerToUpper(){

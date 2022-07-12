@@ -5,6 +5,7 @@ import 'jquery'
 import 'popper.js'
 import 'bootstrap'
 import './form'
+import './filters'
 
 Vue.config.productionTip = false
 
